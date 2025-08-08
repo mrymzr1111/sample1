@@ -8,12 +8,13 @@ export default function Card({ product }) {
   return (
     <div className="   col-md-6 col-lg-3 mb-4">
       <div className="card h-100 shadow-sm shadow-sm bg-light    ">
-        <  img
+        <div ><  img
                src={product.image}
-                         className="card-img-top"
+                         className="card-img-top img-fluid"
           alt={product.title}
           style={{ height: "250px", objectFit: "cover" }}
-        />
+        /></div>
+        
 
         <div className="card-body d-flex flex-column">
           <h5 className="card-title">{product.title}</h5>

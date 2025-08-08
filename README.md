@@ -21,7 +21,7 @@ Deliverables:
 * Any responsiveness considerations
 
 .................................................................................................
-I wanted to usetailwind but i have to use Bootstrap due to configuration issues and setup errors, I switched to Bootstrap for faster implementation, so i make it responsible with bootstrap i used grid system (col-md-6 col-lg-3) to organize the product cards into a responsive 4 column layout on large screens,  2 column layout on medium screens , and a single column layout on smaller devices like cellphone
+I wanted to use tailwind but i have to use Bootstrap due to configuration issues and setup errors, I switched to Bootstrap for faster implementation, so i make it responsible with bootstrap i used grid system (col-md-6 col-lg-3) to organize the product cards into a responsive 4 column layout on large screens,  2 column layout on medium screens , and a single column layout on smaller devices like cellphone
 
 Responsiveness :
 The layout adapts to screen size using Bootstrap’s built-in classes. Cards maintain consistent height using h-100, and spacing is handled with responsive padding margin utilities to ensure visual balance on all devices 
