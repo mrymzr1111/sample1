@@ -2,6 +2,7 @@
 import { useState } from "react";
 
 export default function Card({ product }) {
+
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
 
   return (
@@ -34,11 +35,13 @@ export default function Card({ product }) {
 
         
           <button
-            className={`btn ${
+            className=   {`btn ${
               product.inStock ? "btn-primary" : "btn-danger"
             } mt-auto`}
+
             disabled={!product.inStock}
           >
+            
             {product.inStock ? "Add to Cart" : "Out of Stock"}
           </button>
         </div>
