@@ -1,38 +1,41 @@
 
+// import "./App.css";
 
-import { useState } from 'react';
-import './App.css';
+// import data from "./database/db.json";
+// import Card from "./components/Cart";
 
-import { AiFillEye } from "react-icons/ai";
-import { AiFillEyeInvisible } from "react-icons/ai";
+// const products = data.products;
+
+// function App() {
+//   return (
+//     <div className="wrapper">
+//    <div className="container py-5">
+//       <div className="row">
+//           {products.map((product) => (
+//             <Card key={product.id} product={product} />
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import data from "./database/db.json";
+import Card from "./components/Cart";
 
 function App() {
-  const [type, setType] = useState("password");
-  const [value, setValue] = useState(<AiFillEye />);
-
-  const handleClick = () => {
-    if (type === 'password') {
-      setType('text');
-      setValue(<AiFillEyeInvisible />);
-    } else {
-      setType('password');
-      setValue(<AiFillEye />);
-    }
-  }
-
   return (
-   
-    <div className="wrapper">
-     <label for="staticEmail" class="col-sm-2 col-form-label">Enter your password:</label>
-      <div className='input-fields'>
-
-        <input type={type} />
-        <h4 onClick={handleClick}>{value}</h4>
-      
+    <div className="container py-5">
+      <div className="row">
+        {data.products.map((product) => (
+          <Card key={product.id} product={product} />
+        ))}
       </div>
-    
     </div>
-   
   );
 }
 
